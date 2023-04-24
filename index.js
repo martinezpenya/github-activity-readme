@@ -139,9 +139,9 @@ Toolkit.run(
       (content) => content.trim() === "<!--END_SECTION:activity-->"
     );
 
-    if (!content.length) {
-      tools.exit.failure("No PullRequest/Issue/IssueComment events found");
-    }
+    //if (!content.length) {
+    //  tools.exit.failure("No PullRequest/Issue/IssueComment events found");
+    //}
 
     if (content.length < 5) {
       tools.log.info("Found less than 5 activities");
